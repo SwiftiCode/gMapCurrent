@@ -60,5 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>use you rcurrent location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Use location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>use loc</string>
 </dict>
 </plist>

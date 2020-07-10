@@ -14,6 +14,7 @@
 		207123EF24B8646300F178CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207123EE24B8646300F178CD /* Assets.xcassets */; };
 		207123F224B8646300F178CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207123F024B8646300F178CD /* LaunchScreen.storyboard */; };
 		207123FD24B8646400F178CD /* gMapCurrentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207123FC24B8646400F178CD /* gMapCurrentTests.swift */; };
+		AEAA989DDA82DA7638A3A89D /* libPods-gMapCurrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053FA469CA9C2D346E5C914 /* libPods-gMapCurrent.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07E14FBA89AD363B28D2493A /* Pods-gMapCurrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gMapCurrent.release.xcconfig"; path = "Target Support Files/Pods-gMapCurrent/Pods-gMapCurrent.release.xcconfig"; sourceTree = "<group>"; };
+		2053FA469CA9C2D346E5C914 /* libPods-gMapCurrent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gMapCurrent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		207123E224B8645F00F178CD /* gMapCurrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gMapCurrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207123E524B8645F00F178CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		207123E724B8645F00F178CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		207123F824B8646300F178CD /* gMapCurrentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gMapCurrentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		207123FC24B8646400F178CD /* gMapCurrentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gMapCurrentTests.swift; sourceTree = "<group>"; };
 		207123FE24B8646400F178CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9873F42F35058D3858CFCA81 /* Pods-gMapCurrent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gMapCurrent.debug.xcconfig"; path = "Target Support Files/Pods-gMapCurrent/Pods-gMapCurrent.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEAA989DDA82DA7638A3A89D /* libPods-gMapCurrent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				207123E424B8645F00F178CD /* gMapCurrent */,
 				207123FB24B8646400F178CD /* gMapCurrentTests */,
 				207123E324B8645F00F178CD /* Products */,
+				B186DAC9FB545077EDE721B5 /* Pods */,
+				7C33FA9E489526D402F04249 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,24 @@
 			path = gMapCurrentTests;
 			sourceTree = "<group>";
 		};
+		7C33FA9E489526D402F04249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2053FA469CA9C2D346E5C914 /* libPods-gMapCurrent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B186DAC9FB545077EDE721B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9873F42F35058D3858CFCA81 /* Pods-gMapCurrent.debug.xcconfig */,
+				07E14FBA89AD363B28D2493A /* Pods-gMapCurrent.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2071240124B8646400F178CD /* Build configuration list for PBXNativeTarget "gMapCurrent" */;
 			buildPhases = (
+				BC617001BFE549F24769C798 /* [CP] Check Pods Manifest.lock */,
 				207123DE24B8645F00F178CD /* Sources */,
 				207123DF24B8645F00F178CD /* Frameworks */,
 				207123E024B8645F00F178CD /* Resources */,
+				1950613D699EA0A0B43D364C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1950613D699EA0A0B43D364C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gMapCurrent/Pods-gMapCurrent-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gMapCurrent/Pods-gMapCurrent-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gMapCurrent/Pods-gMapCurrent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC617001BFE549F24769C798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gMapCurrent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		207123DE24B8645F00F178CD /* Sources */ = {
@@ -360,6 +429,7 @@
 		};
 		2071240224B8646400F178CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9873F42F35058D3858CFCA81 /* Pods-gMapCurrent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +448,7 @@
 		};
 		2071240324B8646400F178CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E14FBA89AD363B28D2493A /* Pods-gMapCurrent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
